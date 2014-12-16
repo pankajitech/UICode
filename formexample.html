@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title>form example</title>
+	<style type="text/css">
+		#inquiryform{
+			width: 400px;
+		}
+	</style>
+</head>
+<body>
+<h2>Inquiry Form</h2>
+<div id="inquiryform"> 
+<form>
+	<fieldset>
+		<legend>Personal Information</legend>
+		<table>
+			<tr>
+				<td>Name:</td>
+				<td><input type="text" name="stuName" placeholder="Your Name" required/></td>
+			</tr>	
+			<tr>
+				<td>Contact:</td>
+				<td><input type="number" name="stuContact" placeholder="Your Contact"/></td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><input type="email" name="stuEmail" placeholder="Your Email"/></td>
+			</tr>
+			<tr>
+				<td>Date of Birth:</td>
+				<td><input type="date" name="stuDob"/></td>
+			</tr>
+			<tr>
+				<td>Gender:</td>
+				<td><input type="radio" name="stuGender" value="male" checked>Male</input> 
+					<input type="radio" name="stuGender" value="female">FeMale</input>
+				</td>
+			</tr>
+
+			<tr>
+				<td>City:</td>
+				<td>
+					<select name="city">
+						<option value="bhopal">Bhopal</option>		
+						<option value="bhopal">Indore</option>	
+						<option value="bhopal">Mumbai</option>	
+						<option value="bhopal">Pune</option>	
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Address:</td>
+				<td><textarea name="address" cols="30" rows="5"></textarea>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Course Selected:</td>
+				<td><input type="checkbox" name="course" value="java">Java</input>
+					<input type="checkbox" name="course" value="hibernate">Hibernate</input>
+					<input type="checkbox" name="course" value="spring">Spring</input>
+					<input type="checkbox" name="course" value="webservice">WebService</input>
+					<input type="checkbox" name="course" value="advUI">Advance UI</input>
+				 </td>
+			</tr>
+
+			<tr>
+				<td colspan="2" align="center"> <input type="submit" name="submitForm" value="Send Inquiry"/> </td>
+				
+			</tr>
+
+		</table>	
+		
+	</fieldset>
+
+</form>
+</div>
+</body>
+</html>
